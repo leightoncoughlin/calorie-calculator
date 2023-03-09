@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.main {
+  margin-top: 20px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+.header p {
+  max-width: 1200px;
+  padding: 40px 20px 40px 20px;
+  color: rgb(68, 68, 68);
+  font-size: 25px;
+}
+.header-logo {
+  width: 200px;
+}
+.inputAreaDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: normal;
+  background-color: #367af7;
+  border-radius: 20px;
+  padding: 70px;
+  max-width: 1200px;
+}
+.inputAreaimage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputAreaFields {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  padding-right: 100px;
+}
+.inputAreaFields input {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+}
+.inputAreaFields input:focus {
+  outline: none;
+}
+.inputAreaFields input:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+.inputAreaFields h2 {
+  color: white;
+  font-size: 35px;
+}
+.inputAreaFields .imperial {
+  background-color: #0040b0;
+  border-color: white;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  margin: 20px 5px 20px 5px;
+  border: 4px solid #0040b0;
+  border-radius: 10px;
+}
+.inputAreaFields .metric {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  margin: 20px 5px 20px 5px;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+}
+.inputAreaFields button {
+  background-color: #0040b0;
+  border-color: white;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  margin: 20px 5px 20px 5px;
+  border: 4px solid #0040b0;
+  border-radius: 10px;
+}
+.inputAreaFields button:hover {
+  background-color: #367af7;
+  border-color: white;
+  transform: scale(1.12);
+  transition: 0.3s;
+}
+
+.inputAreaFields p {
+  color: #96bafb;
+  margin-bottom: 10px;
+}
+.inputAreaFields select {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 355px;
+}
+.inputAreaFields option {
+  font-size: 20px;
+}
+.runnerimg {
+  width: 700px;
+  border-radius: 20px;
+}
+.inputAreaFields form input,
+label {
+  color: #96bafb;
+  font-size: 22px;
+}
+.genderDiv input {
+  transform: scale(2);
+  margin: 0 20px 0 20px;
+}
+.genderDiv input:hover {
+  transform: scale(2.5);
+}
+.resultsSection {
+  text-align: center;
+  margin-top: 70px;
+  padding: 40px 70px 70px 70px;
+  width: 1200px;
+  background-color: #f1f6ff;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+.resultsSectionInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: normal;
+}
+.resultsTable {
+  background-color: #ffffff;
+  color: rgb(94, 94, 94);
+}
+.resultsTable h2 {
+  background-color: #f1f6ff;
+  color: black;
+}
+.resultsInfo {
+  margin-left: 50px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+.resultsTable table,
+thead,
+tbody,
+tr,
+th,
+td {
+  padding: 10px;
+  border: 3px solid rgb(180, 180, 180);
+  border-collapse: collapse;
+}
+
+.resultsSection h2 {
+  padding: 20px 0 20px 0;
+  font-size: 35px;
+}
+.resultsTable thead {
+  background-color: #367af7;
+  color: white;
+}
+.resultsTable span {
+  font-size: 20px;
+}
+.resultsTable td {
+  font-size: 30px;
+}
+.resultsTable th {
+  font-size: 40px;
+}
+.results {
+  padding: 20px;
+}
+.extraInfo {
+  width: 1200px;
+  margin-top: 70px;
+}
+.resultsSectionNew i {
+  transform: scale(2);
+  justify-content: center;
+  padding: 10px 30px 10px 30px;
+  color: green;
+}
+.resultsSectionNew {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 30px;
+  border-bottom: 2px solid rgb(216, 216, 216);
+  box-sizing: border-box;
+}
+.calsNeeded {
+  font-size: 60px;
+}
+.goal {
+  font-size: 30px;
+}
+.colm i {
+  color: rgb(214, 186, 27);
+}
+.cold i {
+  color: red;
+}
+.bot {
+  border-bottom: none;
+}
+.calsNeeded {
+  padding-left: 700px;
+}
+.push {
+  padding-left: 605px;
+}
+.pushi {
+  padding-left: 640px;
+}
+.resultsDiv {
+  padding-top: 50px;
+}
+.resultss {
+  padding-left: 50px;
+}
+.metric a,
+.imperial a {
+  text-decoration: none;
+  color: white;
+}
+.extraInfo {
+  width: 1200px;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+.extraInfo p {
+  color: rgb(68, 68, 68);
+  font-size: 25px;
+}
+.extraInfo span {
+  font-weight: bold;
+  font-size: 27px;
+}
+.copywright {
+  text-align: center;
+  font-size: 10px;
+  padding: 40px;
+}
+.btt {
+  background-color: #367af7;
+  border-color: white;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  margin: 20px 5px 20px 5px;
+  border-radius: 10px;
+}
+.btt a {
+  text-decoration: none;
+  color: white;
+}
+.btt:hover {
+  background-color: #367af7;
+  transform: scale(1.12);
+  transition: 0.3s;
+}

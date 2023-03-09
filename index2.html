@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TDEE Calculator</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/50828137dc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <div class="header">
+          <img src="images/logo.png" alt="logo" class="header-logo" />
+          <p>
+            Welcome to the best Total Daily Energy Expenditure Calculator! This
+            application will calculate your BMR (basic metabolic rate) first and
+            then add on the calories you would expend through exercise. The
+            application will then display the amount of calories you would need
+            to consume in order to either lose, maintain or gain weight. This
+            Calculator takes into account your height, weight, age, gender and
+            activity level.
+          </p>
+        </div>
+        <div class="inputAreaDiv">
+          <div class="inputAreaFields">
+            <h2>Your Measurements</h2>
+            <div>
+              <button class="metric">
+                <a href="index.html"> Metric </a>
+              </button>
+              <button class="imperial">
+                <a href="#"> Imperial </a>
+              </button>
+            </div>
+            <div class="genderDiv">
+              <label>Male</label>
+              <input checked name="gender" type="radio" id="male" />
+              <label>Female</label>
+              <input name="gender" type="radio" id="female" />
+              <p>Select your assigned gender at birth</p>
+            </div>
+            <div>
+              <input type="number" id="weight" value="160" />
+              <p>Input your weight in lbs</p>
+            </div>
+            <div>
+              <input type="number" id="height" value="66" />
+              <p>Input your height in inches</p>
+            </div>
+            <div>
+              <input type="number" id="age" value="20" />
+              <p>Input your age</p>
+            </div>
+            <div>
+              <div>
+                <select id="exercise">
+                  <option value="exercise1">
+                    Sedentary: little or no exercise
+                  </option>
+                  <option value="exercise2">
+                    Light: exercise 1-3 times per week
+                  </option>
+                  <option value="exercise3">
+                    Moderate: exercise 4-5 times per week
+                  </option>
+                  <option value="exercise4">
+                    Active: daily exercise or intense exercise 3-5 times per
+                    week
+                  </option>
+                  <option value="exercise5">
+                    Very Active: intense exercise 6-7 times per week
+                  </option>
+                </select>
+                <p>Select your activity level</p>
+              </div>
+              <div>
+                <button id="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="inputAreaimage">
+            <img class="runnerimg" src="images/runner.jpg" alt="runner" />
+          </div>
+        </div>
+        <div class="resultsDiv">
+          <h2 class="resultss">Results</h2>
+          <div class="resultsSectionNew">
+            <div>
+              <i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <div>
+              <h3 class="goal">Heavy Weight Gain</h3>
+              <p class="weightPweek">(+1lb/week)</p>
+            </div>
+            <div>
+              <h3 id="heavyWeightGain" class="calsNeeded push">2502kcals</h3>
+            </div>
+          </div>
+          <div class="resultsSectionNew">
+            <div>
+              <i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <div>
+              <h3 class="goal">Weight Gain</h3>
+              <p class="weightPweek">(+0.5lb/week)</p>
+            </div>
+            <div>
+              <h3 id="weightGain" class="calsNeeded">2252kcals</h3>
+            </div>
+          </div>
+          <div class="resultsSectionNew">
+            <div class="colm">
+              <i class="fa-solid fa-grip-lines"></i>
+            </div>
+            <div>
+              <h3 class="goal">Maintain Weight</h3>
+              <p class="weightPweek">(+0lb/week)</p>
+            </div>
+            <div>
+              <h3 id="maintenance" class="calsNeeded pushi">2002kcals</h3>
+            </div>
+          </div>
+          <div class="resultsSectionNew">
+            <div class="cold">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div>
+              <h3 class="goal">Weight Loss</h3>
+              <p class="weightPweek">(-0.5lb/week)</p>
+            </div>
+            <div>
+              <h3 id="weightLoss" class="calsNeeded">1752kcals</h3>
+            </div>
+          </div>
+          <div class="resultsSectionNew bot">
+            <div class="cold">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div>
+              <h3 class="goal">Heavy Weight Loss</h3>
+              <p class="weightPweek">(-1lb/week)</p>
+            </div>
+            <div>
+              <h3 id="heavyWeightLoss" class="calsNeeded push">1502kcals</h3>
+            </div>
+          </div>
+        </div>
+        <div class="extraInfo">
+          <h2>Extra Information</h2>
+          <br />
+          <p>
+            In order to calculate your TDEE or total daily energy expenditure we
+            must know your BMR or basic metabloic rate. The following formula
+            was used to calculatate the BMR
+            <br /><br />
+            <span>Mifflin-St Jeor Equation:</span><br />
+            For men: <br />
+            BMR = 10W + 6.25H - 5A + 5 <br />
+            for women: <br />
+            BMR = 10W + 6.25H - 5A - 161
+            <br /><br />
+            <span>Where:</span> <br />
+            W = Weight <br />
+            H = Height
+            <br />
+            A = Age
+            <br /><br />
+            The value obtained from this equations is the estimated number of
+            calories a person can consume in a day to maintain their
+            body-weight, assuming they remain at rest. This value is multiplied
+            by an activity factor (generally 1.2-1.95), dependent on a person's
+            typical levels of exercise, in order to obtain a more realistic
+            value for maintaining body-weight. Now that your TDEE has been
+            calculated we can then add or subtract 250 or 500 calories depending
+            your goals to give you an estimate to work with. <br />
+            <br />
+            Please be aware this is just an estimate and should only be used as
+            a baseline that you will later adapt based on your results. It is
+            reccomened to consume the calories mentioned above depending on your
+            goal and weigh yourself every morning and adapt your plan if
+            neccessary. for example, if after a month you are still gaining
+            weight when you had planned on maintaining, reduce your calories by
+            250 and see how this affects your weight moving forward.
+          </p>
+          <br />
+          <button class="btt">
+            <a href="#">Back To Top</a>
+          </button>
+          <br />
+
+          <p class="copywright">Leighton Coughlin © Copyright 2022</p>
+        </div>
+      </div>
+    </main>
+    <script src="index2.js"></script>
+  </body>
+</html>
